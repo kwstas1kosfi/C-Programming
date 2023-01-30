@@ -44,10 +44,26 @@ int main(int argc, char *argv[])
             }
         }
         printf("\nIf you want to end press 1\nOr\nIf you want to redo this press 0\n");
+        do{
         scanf("%d", &con);
+        printf("%d\n",con);
+        if (con==1)
+        {
+            printf("Now you are exiting the programm\n");
+        }
+        else if( con==0)
+        {
+            printf("You are doing it again\n");
+        }
+        else
+        {
+            printf("Type 1 or 0\n");
+        }
+        }
+        while((con!=0)&&(con!=1));
         redos=redos+1;
     }
     while (con==0);
-    printf("We did this %d times",redos);
+    printf("We did this %d times\n",redos);
     return 0;
 }
