@@ -131,6 +131,8 @@ int main()
 		}
 	}while((mday<1)||(mday>30));
 	printf("The bill did publish on %d/%d/%d\n",mday,mon,year);*/
+	// i wanted to create an input of a given date and 
+	// current time -given time<= 10 he will get a discount and he will get some pros 
 	//Fuction which shows us the current time
 	time_t curtime;
 	time(&curtime);
